@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "elementos",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
