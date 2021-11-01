@@ -1,0 +1,74 @@
+<ion-header>
+    <ion-toolbar color="danger">
+        <ion-buttons slots="start" text="Regresar">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>alert</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-content>
+        <ion-card>
+            <ion-item href="#" class="ion-activated">
+                <ion-icon name="wifi" slot="start"></ion-icon>
+                <ion-label>Card Link Item 1 activated</ion-label>
+            </ion-item>
+        </ion-card>
+
+        <ion-list>
+            <ion-item>
+                <ion-label>Pepperoni</ion-label>
+                <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Sausage</ion-label>
+                <ion-toggle [(ngModel)]="sausage" disabled="true"></ion-toggle>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Mushrooms</ion-label>
+                <ion-toggle [(ngModel)]="mushrooms"></ion-toggle>
+            </ion-item>
+        </ion-list>
+        <ion-card>
+            <ion-item href="#">
+                <ion-icon name="wine" slot="start"></ion-icon>
+                <ion-label>Card Link Item 2</ion-label>
+            </ion-item>
+        </ion-card>
+        <ion-list>
+            <ion-item>
+                <ion-label>Nombre</ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Femenino</ion-label>
+                <ion-radio slot="end"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>Masculino</ion-label>
+                <ion-radio slot="end"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>Deseo recibir notificaciones</ion-label>
+                <ion-checkbox slot="start"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+                <ion-label>Deseo recibir promociones</ion-label>
+                <ion-checkbox slot="start"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+                <ion-label>Acepto los términos de uso</ion-label>
+                <ion-toggle slot="end"></ion-toggle>
+            </ion-item>
+            <ion-item>
+                <ion-label>Acepto los términos de privacidad</ion-label>
+                <ion-toggle slot="end"></ion-toggle>
+            </ion-item>
+        </ion-list>
+        <ion-spinner name="lines" color="tertiary"></ion-spinner>
+    </ion-content>
+
+</ion-content>
