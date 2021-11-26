@@ -6,8 +6,8 @@
 
 <ion-content>
     <ion-list>
-        <ion-item *ngFor="let c of componentes" [routerLink]="c.redirectTo">
-            <ion-icon slot="start" name="american-football-outline"></ion-icon>
+        <ion-item *ngFor="let c of componentes" [routerLink]="c.redirectTo" detail>
+            <ion-icon slot="start" [name]="c.icon" color="primary"></ion-icon>
             {{c.name}}
         </ion-item>
     </ion-list>

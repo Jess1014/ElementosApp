@@ -13,18 +13,23 @@ redirectTo: string;
 })
 export class InicioPage implements OnInit {
 
-componentes: Componente[] = [
-  { 
-    icon: "american-football-outline",
-    name: "action-sheet",
-    redirectTo: "/action-sheet"
-  },
-  { 
-    icon: "american-football-outline",
-    name: "alert",
-    redirectTo: "/alert"
-  }
-];
+  componentes: Componente[] = [
+    { 
+      icon: "american-football-outline",
+      name: "action-sheet",
+      redirectTo: "/action-sheet"
+    },
+    { 
+      icon: "alert-circle-outline",
+      name: "Alert",
+      redirectTo: "/alert"
+    },
+    { 
+      icon: "happy",
+      name: "Avatar",
+      redirectTo: "/avatar"
+    }
+  ];
   constructor() { }
 
   ngOnInit() {
