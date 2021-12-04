@@ -28,6 +28,11 @@ export class InicioPage implements OnInit {
       icon: "happy",
       name: "Avatar",
       redirectTo: "/avatar"
+    },
+    { 
+      icon: "skull-outline",
+      name: "QueSeaLoQueDiosQuiera",
+      redirectTo: "/que-sea-lo-que-dios-quiera"
     }
   ];
   constructor() { }

@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'avatar',
     loadChildren: () => import('./pages/avatar/avatar.module').then( m => m.AvatarPageModule)
   },
+  {
+    path: 'que-sea-lo-que-dios-quiera',
+    loadChildren: () => import('./pages/que-sea-lo-que-dios-quiera/que-sea-lo-que-dios-quiera.module').then( m => m.QueSeaLoQueDiosQuieraPageModule)
+  },
 ];
 
 @NgModule({
